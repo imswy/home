@@ -40,7 +40,7 @@
       :stroke-width="20"
       :percentage="timeData.year.pass"
     />
-    <div v-if="startDateText && store.siteStartShow">
+    <div v-if="startDate?.length >= 4 && store.siteStartShow">
       <span class="text" v-html="startDateText" />
       <!-- <el-progress
         :show-text="false"
@@ -61,13 +61,13 @@ import { mainStore } from "@/store";
 const store = mainStore();
 
 // 进度条数据
-let timeData = ref(getTimeCapsule());
-let startDate = ref(import.meta.env.VITE_SITE_START);
-let startDateText = ref(null);
-let timeInterval = null;
+const timeData = ref(getTimeCapsule());
+const startDate = ref(import.meta.env.VITE_SITE_START);
+const startDateText = ref(null);
+const timeInterval = ref(null);
 
 onMounted(() => {
-  timeInterval = setInterval(() => {
+  timeInterval.value = setInterval(() => {
     timeData.value = getTimeCapsule();
     if (startDate.value)
       startDateText.value = siteDateStatistics(new Date(startDate.value));
@@ -75,7 +75,7 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  clearInterval(timeInterval);
+  clearInterval(timeInterval.value);
 });
 </script>
 
