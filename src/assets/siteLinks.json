@@ -2,36 +2,36 @@
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "https://blog.mylamb.top/"
+    "link": "https://blog.novalinx.top/"
   },
   {
     "icon": "Cloud",
     "name": "网盘",
-    "link": "https://pan.mylamb.top/"
+    "link": "https://pan.novalinx.top/"
   },
   {
     "icon": "CompactDisc",
     "name": "音乐",
-    "link": "https://music.mylamb.top/"
+    "link": "https://music.novalinx.top/"
   },
   {
     "icon": "Compass",
     "name": "起始页",
-    "link": "https://nav.mylamb.top/"
+    "link": "https://nav.novalinx.top/"
   },
   {
     "icon": "Book",
     "name": "网址集",
-    "link": "https://web.mylamb.top/"
+    "link": "https://web.novalinx.top/"
   },
   {
     "icon": "Fire",
     "name": "今日热榜",
-    "link": "https://hot.mylamb.top/"
+    "link": "https://hot.novalinx.top/"
   },
   {
     "icon": "LaptopCode",
     "name": "站点监测",
-    "link": "https://status.mylamb.top/"
+    "link": "https://status.novalinx.top/"
   }
 ]
